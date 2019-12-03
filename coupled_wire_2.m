@@ -19,7 +19,7 @@ res_length = 300;
 l_left = (Ny+1)*a;
 l_right = (Ny+extra_sites+1)*a;
 
-nnn = 1;
+nnn = 2;
 m = [1:Ny];
 m_prim = [1:(Ny+extra_sites)];
 
@@ -34,7 +34,7 @@ cor_left = zeros(2*Ny,Ny);
 cor_right = zeros(2*Ny+extra_sites,Ny+extra_sites);
 Q = zeros(Nx*Ny+4*Ny+extra_sites,1);
 
-E = double(1e-3);
+E = double(4e-3);
 k = double(sqrt(2*m_e*E*q/h_bar^2-m.^2*pi^2/(l_left)^2));
 k_prim = double(sqrt(2*m_e*E*q/h_bar^2-m_prim.^2*pi^2/(l_right)^2));
 
